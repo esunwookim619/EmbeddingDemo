@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link href="popup.css" rel="stylesheet"/>
+    <script>
+        function createPopup() {
+            let popup = document.getElementById("myPopup");
+            if (popup.style.display == "none") {
+                popup.style.display = "block";
+            } else {
+                popup.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Motive Auto Demo</h1>
+    </div>
+
+    <button class="popupButton" onclick="createPopup()">Open app</button>
+
+    <div class="popupBox" id="myPopup">
+        <object type="text/html" data="http://localhost:3000/" style="width:400px; height:400px"
+        ></object>
+    </div>
+
+</body>
+</html>
